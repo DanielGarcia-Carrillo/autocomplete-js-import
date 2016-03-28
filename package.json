@@ -1,0 +1,41 @@
+{
+  "name": "autocomplete-js-import",
+  "version": "0.0.1",
+  "description": "Autocompletes ES2015 style import statements",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/DanielGarcia-Carrillo/autocomplete-js-import.git"
+  },
+  "keywords": [
+    "autocomplete",
+    "atom",
+    "es6",
+    "import"
+  ],
+  "author": "Daniel Garcia-Carrillo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanielGarcia-Carrillo/autocomplete-js-import/issues"
+  },
+  "engines": {
+    "atom": "^2.0.0"
+  },
+  "providedServices": {
+    "autocomplete.provider": {
+      "versions": {
+        "2.0.0": "provide"
+      }
+    }
+  },
+  "homepage": "https://github.com/DanielGarcia-Carrillo/autocomplete-js-import#readme",
+  "devDependencies": {
+    "eslint": "^2.5.1"
+  },
+  "dependencies": {
+    "lodash.uniq": "^4.2.0"
+  }
+}
