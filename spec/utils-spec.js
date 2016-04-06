@@ -72,12 +72,4 @@ describe('Utils', function() {
             expectCorrectMatches(importStatement, defaultPackageName);
         });
     });
-
-    describe('#startsWith', function() {
-
-    });
-
-    describe('#endsWith', function() {
-
-    });
 });
