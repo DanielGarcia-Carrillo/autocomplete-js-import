@@ -15,6 +15,7 @@
     "atom",
     "es6",
     "es2015",
+    "require",
     "import"
   ],
   "author": "Daniel Garcia-Carrillo",
