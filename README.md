@@ -8,6 +8,6 @@ project's root package.json file.
 ![import local files screenshot](misc/autocomplete-screenshot.png)
 
 # TODO
-- [ ] require syntax
 - [ ] autocomplete node builtins
+- [ ] make hidden files an option to autocomplete
 - [ ] update project deps when a new folder is opened (currently only loaded on atom start)
