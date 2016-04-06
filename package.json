@@ -14,6 +14,7 @@
     "autocomplete",
     "atom",
     "es6",
+    "es2015",
     "import"
   ],
   "author": "Daniel Garcia-Carrillo",

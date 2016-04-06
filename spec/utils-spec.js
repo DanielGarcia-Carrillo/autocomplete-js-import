@@ -41,7 +41,7 @@ describe('Utils', function() {
             });
         });
 
-        xit(`handles 'as' imports`, function() {
+        it(`handles 'as' imports`, function() {
             let statement = `import * as x from '${defaultPackageName}'`;
 
             expectCorrectMatches(statement, defaultPackageName);
@@ -56,7 +56,7 @@ describe('Utils', function() {
             expectCorrectMatches(statement, defaultPackageName);
         });
 
-        xit('handles inlined multi imports', function() {
+        it('handles inlined multi imports', function() {
             let statement = `import def, {x_a} from "${defaultPackageName}"`;
 
             expectCorrectMatches(statement, defaultPackageName);
