@@ -1,6 +1,6 @@
 {
   "name": "autocomplete-js-import",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Autocompletes commonjs and es6 import statements",
   "main": "lib/index.js",
   "scripts": {
