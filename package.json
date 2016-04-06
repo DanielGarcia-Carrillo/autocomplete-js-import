@@ -1,7 +1,7 @@
 {
   "name": "autocomplete-js-import",
   "version": "0.1.0",
-  "description": "Autocompletes ES2015 style import statements",
+  "description": "Autocompletes commonjs and es6 import statements",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
