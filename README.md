@@ -8,7 +8,7 @@ project's root package.json file.
 ![import local files screenshot](https://raw.githubusercontent.com/DanielGarcia-Carrillo/autocomplete-js-import/master/misc/autocomplete-screenshot.png)
 
 # TODO
-- [ ] Update project deps on file open
+* Changing settings doesn't do anything until atom restart
 
 # Wontfix issues
 * Editing package.json dependencies doesn't reflect in suggestions until restart
