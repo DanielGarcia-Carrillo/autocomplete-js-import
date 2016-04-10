@@ -7,7 +7,7 @@ import {
     getParentDir
 } from '../lib/utils';
 
-function expectCorrectMatches(statement, packageName, config={es6Import: true, requireImport: true}) {
+function expectCorrectMatches(statement, packageName, config={es6: true, require: true}) {
     expect(capturedDependency(statement, config)).toEqual(packageName);
 }
 
