@@ -8,6 +8,8 @@ project's root package.json file.
 ![import local files screenshot](https://raw.githubusercontent.com/DanielGarcia-Carrillo/autocomplete-js-import/master/misc/autocomplete-screenshot.png)
 
 # TODO
-- [ ] autocomplete node builtins
-- [ ] make hidden files an option to autocomplete
-- [ ] update project deps when a new folder is opened (currently only loaded on atom start)
+- [ ] Update project deps on file open
+
+# Wontfix issues
+* Editing package.json dependencies doesn't reflect in suggestions until restart
+  * Requires me to watch files which could be a heavy operation for large package.json

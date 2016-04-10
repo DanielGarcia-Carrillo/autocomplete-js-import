@@ -1,7 +1,11 @@
 'use babel'
 /* eslint-env jasmine */
 
-import {capturedDependency} from '../lib/utils';
+import {
+    capturedDependency,
+    getDirAndFilePrefix,
+    getParentDir
+} from '../lib/utils';
 
 function expectCorrectMatches(statement, packageName, config={es6Import: true, requireImport: true}) {
     expect(capturedDependency(statement, config)).toEqual(packageName);
@@ -71,6 +75,40 @@ describe('Utils', function() {
             const importStatement = `} from "${defaultPackageName}"`;
 
             expectCorrectMatches(importStatement, defaultPackageName);
+        });
+    });
+
+    describe('getParentDir', function() {
+        it('does what it\'s supposed to', function () {
+            expect(getParentDir('../file/thing')).toEqual('../file');
+        });
+    });
+
+    describe('getDirAndFilePrefix', function() {
+        it('handles absolute paths', function () {
+            const result = getDirAndFilePrefix('/home/user/daniel/file');
+
+            expect(result.length).toBe(2);
+            expect(result[0]).toEqual('/home/user/daniel');
+            expect(result[1]).toEqual('file');
+        });
+
+        it('handles relative paths', function () {
+            const dir = '../../dir/..';
+            const file = 'a';
+            const result = getDirAndFilePrefix(dir + '/' + file);
+
+            expect(result.length).toBe(2);
+            expect(result[0]).toEqual(dir);
+            expect(result[1]).toEqual(file);
+        });
+
+        it('handles no file without exploding', function() {
+            const result = getDirAndFilePrefix('../');
+
+            expect(result.length).toEqual(2);
+            expect(result[0]).toEqual('..');
+            expect(result[1]).toEqual('');
         });
     });
 });
