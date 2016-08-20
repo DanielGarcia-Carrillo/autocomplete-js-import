@@ -1,5 +1,5 @@
 # autocomplete-js-import
-Autocomplete+ provider for JS import statements (with optional Fuzzy pattern matching)
+Autocomplete+ provider for JS import statements
 
 This allows the completion of any files relative to the current directory.
 Additionally, there are settings to enable autocompletion of dependent packages found in the current
@@ -7,6 +7,9 @@ project's root package.json file.
 
 ![import local files screenshot](https://raw.githubusercontent.com/DanielGarcia-Carrillo/autocomplete-js-import/master/misc/autocomplete-screenshot.png)
 
+New Fuzzy matching (disabled by default)
+
+![](https://raw.githubusercontent.com/DanielGarcia-Carrillo/autocomplete-js-import/master/misc/fuzzy-matching.gif)
 
 # TODO / Known Issues
 * Changing settings doesn't do anything until atom restart
