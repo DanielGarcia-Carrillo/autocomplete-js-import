@@ -13,7 +13,7 @@ New Fuzzy matching (disabled by default)
 
 # Additional features
 * When project dependencies autocompletion is enabled, every root `package.json` is watched for changes
-* Autocomplete hidden (dot) files
+* Autocomplete hidden (dot) files (disabled by default)
 * Automatically remove unnecessary extensions (e.g. `./index.js` => `./index`) 
 
 
